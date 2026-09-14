@@ -14,7 +14,15 @@ def main() -> None:
         target = ROOT / "public" / metadata["url"].lstrip("/")
         target.parent.mkdir(parents=True, exist_ok=True)
 
-        with urllib.request.urlopen(SOURCE + metadata["url"], timeout=60) as response:
+        request = urllib.request.Request(
+            SOURCE + metadata["url"],
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; ParmaKhutorBackup/1.0)",
+                "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+                "Referer": SOURCE + "/",
+            },
+        )
+        with urllib.request.urlopen(request, timeout=60) as response:
             data = response.read()
 
         expected_size = int(metadata["size"])
