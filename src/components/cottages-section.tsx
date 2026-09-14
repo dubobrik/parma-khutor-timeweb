@@ -3,56 +3,56 @@ import { CalendarDays, ChevronLeft, ChevronRight, Images } from "lucide-react";
 
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
-import c1Exterior from "../assets/cottage-1-exterior.webp.asset.json";
-import c1Living1 from "../assets/cottage-1-living-1.webp.asset.json";
-import c1Living2 from "../assets/cottage-1-living-2.webp.asset.json";
-import c1Living3 from "../assets/cottage-1-living-3.webp.asset.json";
-import c1Living4 from "../assets/cottage-1-living-4.webp.asset.json";
-import c1Stairs from "../assets/cottage-1-stairs.webp.asset.json";
-import c1Loft from "../assets/cottage-1-loft-bedroom.webp.asset.json";
-import c1Bathroom from "../assets/cottage-1-bathroom.webp.asset.json";
-import c1Towels from "../assets/cottage-1-towels.webp.asset.json";
+const c1Exterior = "/assets/cottage-1-exterior.webp";
+const c1Living1 = "/assets/cottage-1-living-1.webp";
+const c1Living2 = "/assets/cottage-1-living-2.webp";
+const c1Living3 = "/assets/cottage-1-living-3.webp";
+const c1Living4 = "/assets/cottage-1-living-4.webp";
+const c1Stairs = "/assets/cottage-1-stairs.webp";
+const c1Loft = "/assets/cottage-1-loft-bedroom.webp";
+const c1Bathroom = "/assets/cottage-1-bathroom.webp";
+const c1Towels = "/assets/cottage-1-towels.webp";
 
-import c2Exterior from "../assets/cottage-2-exterior.webp.asset.json";
-import c2Terrace from "../assets/cottage-2-terrace.webp.asset.json";
-import c2Kitchen from "../assets/cottage-2-kitchen.webp.asset.json";
-import c2Dining from "../assets/cottage-2-dining.webp.asset.json";
-import c2Sofa from "../assets/cottage-2-sofa.webp.asset.json";
-import c2Bedroom from "../assets/cottage-2-bedroom.webp.asset.json";
-import c2BedroomTv from "../assets/cottage-2-bedroom-tv.webp.asset.json";
-import c2BunkRoom from "../assets/cottage-2-bunk-room.webp.asset.json";
-import c2Wc from "../assets/cottage-2-wc.webp.asset.json";
-import c2Shower from "../assets/cottage-2-shower.webp.asset.json";
+const c2Exterior = "/assets/cottage-2-exterior.webp";
+const c2Terrace = "/assets/cottage-2-terrace.webp";
+const c2Kitchen = "/assets/cottage-2-kitchen.webp";
+const c2Dining = "/assets/cottage-2-dining.webp";
+const c2Sofa = "/assets/cottage-2-sofa.webp";
+const c2Bedroom = "/assets/cottage-2-bedroom.webp";
+const c2BedroomTv = "/assets/cottage-2-bedroom-tv.webp";
+const c2BunkRoom = "/assets/cottage-2-bunk-room.webp";
+const c2Wc = "/assets/cottage-2-wc.webp";
+const c2Shower = "/assets/cottage-2-shower.webp";
 
-import c6Cover from "../assets/cottage-6-cover.png.asset.json";
-import c3Veranda from "../assets/cottage-3-veranda.webp.asset.json";
-import c3Swing from "../assets/cottage-3-swing.webp.asset.json";
-import c3Roses from "../assets/cottage-3-roses.webp.asset.json";
-import c3TwinRoom from "../assets/cottage-3-twin-room.webp.asset.json";
-import c3Dining from "../assets/cottage-3-dining.webp.asset.json";
-import c3Kitchen from "../assets/cottage-3-kitchen.webp.asset.json";
-import c3BedroomWardrobe from "../assets/cottage-3-bedroom-wardrobe.webp.asset.json";
-import c3Bedroom from "../assets/cottage-3-bedroom.webp.asset.json";
-import c3Wc from "../assets/cottage-3-wc.webp.asset.json";
-import c3Shower from "../assets/cottage-3-shower.webp.asset.json";
+const c6Cover = "/assets/cottage-6-cover.png";
+const c3Veranda = "/assets/cottage-3-veranda.webp";
+const c3Swing = "/assets/cottage-3-swing.webp";
+const c3Roses = "/assets/cottage-3-roses.webp";
+const c3TwinRoom = "/assets/cottage-3-twin-room.webp";
+const c3Dining = "/assets/cottage-3-dining.webp";
+const c3Kitchen = "/assets/cottage-3-kitchen.webp";
+const c3BedroomWardrobe = "/assets/cottage-3-bedroom-wardrobe.webp";
+const c3Bedroom = "/assets/cottage-3-bedroom.webp";
+const c3Wc = "/assets/cottage-3-wc.webp";
+const c3Shower = "/assets/cottage-3-shower.webp";
 
-import c4Porch from "../assets/cottage-4-porch.webp.asset.json";
-import c4Garden from "../assets/cottage-4-garden.webp.asset.json";
-import c4Living1 from "../assets/cottage-4-living-1.webp.asset.json";
-import c4Living2 from "../assets/cottage-4-living-2.webp.asset.json";
-import c4Bedroom1 from "../assets/cottage-4-bedroom-1.webp.asset.json";
-import c4Bedroom2 from "../assets/cottage-4-bedroom-2.webp.asset.json";
-import c4Wc from "../assets/cottage-4-wc.webp.asset.json";
-import c4Shower from "../assets/cottage-4-shower.webp.asset.json";
+const c4Porch = "/assets/cottage-4-porch.webp";
+const c4Garden = "/assets/cottage-4-garden.webp";
+const c4Living1 = "/assets/cottage-4-living-1.webp";
+const c4Living2 = "/assets/cottage-4-living-2.webp";
+const c4Bedroom1 = "/assets/cottage-4-bedroom-1.webp";
+const c4Bedroom2 = "/assets/cottage-4-bedroom-2.webp";
+const c4Wc = "/assets/cottage-4-wc.webp";
+const c4Shower = "/assets/cottage-4-shower.webp";
 
-import c5Exterior from "../assets/cottage-5-exterior.jpg.asset.json";
-import c5Porch from "../assets/cottage-5-porch.png.asset.json";
-import c5BunkRoom from "../assets/cottage-5-bunk-room.png.asset.json";
-import c5BunkCorner from "../assets/cottage-5-bunk-corner.png.asset.json";
-import c5Dining from "../assets/cottage-5-dining.png.asset.json";
-import c5BedroomTv from "../assets/cottage-5-bedroom-tv.png.asset.json";
-import c5Bedroom from "../assets/cottage-5-bedroom.png.asset.json";
-import c5Bathroom from "../assets/cottage-5-bathroom.png.asset.json";
+const c5Exterior = "/assets/cottage-5-exterior.jpg";
+const c5Porch = "/assets/cottage-5-porch.png";
+const c5BunkRoom = "/assets/cottage-5-bunk-room.png";
+const c5BunkCorner = "/assets/cottage-5-bunk-corner.png";
+const c5Dining = "/assets/cottage-5-dining.png";
+const c5BedroomTv = "/assets/cottage-5-bedroom-tv.png";
+const c5Bedroom = "/assets/cottage-5-bedroom.png";
+const c5Bathroom = "/assets/cottage-5-bathroom.png";
 
 type Photo = { url: string; alt: string };
 type Cottage = {
@@ -74,17 +74,17 @@ const cottages: Cottage[] = [
       "Двухуровневый деревянный домик для отдыха до 4 гостей — с отдельными зонами для сна и отдыха.",
     details:
       "Уютный двухуровневый домик для семьи или небольшой компании до 4 человек. Внутри есть двуспальная кровать и раскладной диван, санузел с душем, кондиционер, телевизор, Wi‑Fi, холодильник и чайник. В доме тёплый пол, поэтому он подходит для проживания круглый год. Для приготовления еды гости могут пользоваться общей летней кухней. Рядом — парковка, беседка, мангальная зона и зелёная территория.",
-    cover: { url: c1Exterior.url, alt: "Двухуровневый домик снаружи" },
+    cover: { url: c1Exterior, alt: "Двухуровневый домик снаружи" },
     photos: [
-      { url: c1Exterior.url, alt: "Двухуровневый домик снаружи" },
-      { url: c1Living1.url, alt: "Комната двухуровневого домика" },
-      { url: c1Living2.url, alt: "Зона отдыха двухуровневого домика" },
-      { url: c1Living3.url, alt: "Интерьер двухуровневого домика" },
-      { url: c1Living4.url, alt: "Интерьер двухуровневого домика" },
-      { url: c1Stairs.url, alt: "Лестница на второй уровень" },
-      { url: c1Loft.url, alt: "Спальня на втором уровне" },
-      { url: c1Bathroom.url, alt: "Санузел двухуровневого домика" },
-      { url: c1Towels.url, alt: "Полотенца и детали интерьера" },
+      { url: c1Exterior, alt: "Двухуровневый домик снаружи" },
+      { url: c1Living1, alt: "Комната двухуровневого домика" },
+      { url: c1Living2, alt: "Зона отдыха двухуровневого домика" },
+      { url: c1Living3, alt: "Интерьер двухуровневого домика" },
+      { url: c1Living4, alt: "Интерьер двухуровневого домика" },
+      { url: c1Stairs, alt: "Лестница на второй уровень" },
+      { url: c1Loft, alt: "Спальня на втором уровне" },
+      { url: c1Bathroom, alt: "Санузел двухуровневого домика" },
+      { url: c1Towels, alt: "Полотенца и детали интерьера" },
     ],
   },
   {
@@ -95,18 +95,18 @@ const cottages: Cottage[] = [
       "Двухкомнатный домик с собственной кухонной зоной — удобно, когда хочется готовить прямо в доме.",
     details:
       "Двухкомнатный деревянный домик до 4 гостей с собственной кухонной зоной. Здесь есть двуспальная и две односпальные кровати, холодильник, индукционная плита, микроволновая печь, чайник и посуда. В доме также есть санузел с душем, кондиционер, телевизор, Wi‑Fi и тёплый пол. Хороший вариант для семейного отдыха и более длительного проживания.",
-    cover: { url: c2Exterior.url, alt: "Домик с кухонной зоной снаружи" },
+    cover: { url: c2Exterior, alt: "Домик с кухонной зоной снаружи" },
     photos: [
-      { url: c2Exterior.url, alt: "Домик с кухонной зоной снаружи" },
-      { url: c2Terrace.url, alt: "Терраса домика" },
-      { url: c2Kitchen.url, alt: "Кухонная зона" },
-      { url: c2Dining.url, alt: "Обеденная зона" },
-      { url: c2Sofa.url, alt: "Зона отдыха с диваном" },
-      { url: c2Bedroom.url, alt: "Спальня" },
-      { url: c2BedroomTv.url, alt: "Спальня с телевизором" },
-      { url: c2BunkRoom.url, alt: "Комната с двухъярусной кроватью" },
-      { url: c2Wc.url, alt: "Санузел" },
-      { url: c2Shower.url, alt: "Душевая" },
+      { url: c2Exterior, alt: "Домик с кухонной зоной снаружи" },
+      { url: c2Terrace, alt: "Терраса домика" },
+      { url: c2Kitchen, alt: "Кухонная зона" },
+      { url: c2Dining, alt: "Обеденная зона" },
+      { url: c2Sofa, alt: "Зона отдыха с диваном" },
+      { url: c2Bedroom, alt: "Спальня" },
+      { url: c2BedroomTv, alt: "Спальня с телевизором" },
+      { url: c2BunkRoom, alt: "Комната с двухъярусной кроватью" },
+      { url: c2Wc, alt: "Санузел" },
+      { url: c2Shower, alt: "Душевая" },
     ],
   },
   {
@@ -117,19 +117,19 @@ const cottages: Cottage[] = [
       "Уютный двухкомнатный домик с кухней для спокойного семейного отдыха в своём ритме.",
     details:
       "Ещё один двухкомнатный домик с собственной кухонной зоной, рассчитанный до 4 гостей. Внутри предусмотрены отдельные спальные места, холодильник, индукционная плита, микроволновая печь, чайник и необходимая посуда. Есть собственный санузел, кондиционер, телевизор, Wi‑Fi и тёплый пол. Можно самостоятельно готовить и не зависеть от общей кухни.",
-    cover: { url: c6Cover.url, alt: "Зона со столиком и лавочками под крышей у домика" },
+    cover: { url: c6Cover, alt: "Зона со столиком и лавочками под крышей у домика" },
     photos: [
-      { url: c6Cover.url, alt: "Зона со столиком и лавочками под крышей" },
-      { url: c3Veranda.url, alt: "Веранда домика" },
-      { url: c3Swing.url, alt: "Качели рядом с домиком" },
-      { url: c3Roses.url, alt: "Вход в домик в розах" },
-      { url: c3Kitchen.url, alt: "Кухонная зона" },
-      { url: c3Dining.url, alt: "Обеденная зона" },
-      { url: c3TwinRoom.url, alt: "Комната с двумя кроватями" },
-      { url: c3Bedroom.url, alt: "Спальня с окном" },
-      { url: c3BedroomWardrobe.url, alt: "Спальня со шкафом" },
-      { url: c3Wc.url, alt: "Санузел" },
-      { url: c3Shower.url, alt: "Душевая кабина" },
+      { url: c6Cover, alt: "Зона со столиком и лавочками под крышей" },
+      { url: c3Veranda, alt: "Веранда домика" },
+      { url: c3Swing, alt: "Качели рядом с домиком" },
+      { url: c3Roses, alt: "Вход в домик в розах" },
+      { url: c3Kitchen, alt: "Кухонная зона" },
+      { url: c3Dining, alt: "Обеденная зона" },
+      { url: c3TwinRoom, alt: "Комната с двумя кроватями" },
+      { url: c3Bedroom, alt: "Спальня с окном" },
+      { url: c3BedroomWardrobe, alt: "Спальня со шкафом" },
+      { url: c3Wc, alt: "Санузел" },
+      { url: c3Shower, alt: "Душевая кабина" },
     ],
   },
   {
@@ -140,16 +140,16 @@ const cottages: Cottage[] = [
       "Двухкомнатный домик без собственной кухни — готовить можно на общей летней кухне.",
     details:
       "Уютный двухкомнатный домик для отдыха семьи — до 4 гостей. Внутри есть двуспальная и двухъярусная кровати, холодильник, микроволновая печь, чайник, кондиционер, телевизор и Wi‑Fi. Собственный санузел оборудован душем и водонагревателем. Для приготовления еды предусмотрена общая летняя кухня на территории.",
-    cover: { url: c4Garden.url, alt: "Домик без кухонной зоны со стороны сада" },
+    cover: { url: c4Garden, alt: "Домик без кухонной зоны со стороны сада" },
     photos: [
-      { url: c4Garden.url, alt: "Домик со стороны сада" },
-      { url: c4Porch.url, alt: "Крытая веранда домика" },
-      { url: c4Living1.url, alt: "Зона отдыха" },
-      { url: c4Living2.url, alt: "Зона отдыха с креслом" },
-      { url: c4Bedroom1.url, alt: "Спальня" },
-      { url: c4Bedroom2.url, alt: "Спальня, другой ракурс" },
-      { url: c4Wc.url, alt: "Санузел" },
-      { url: c4Shower.url, alt: "Душевая кабина" },
+      { url: c4Garden, alt: "Домик со стороны сада" },
+      { url: c4Porch, alt: "Крытая веранда домика" },
+      { url: c4Living1, alt: "Зона отдыха" },
+      { url: c4Living2, alt: "Зона отдыха с креслом" },
+      { url: c4Bedroom1, alt: "Спальня" },
+      { url: c4Bedroom2, alt: "Спальня, другой ракурс" },
+      { url: c4Wc, alt: "Санузел" },
+      { url: c4Shower, alt: "Душевая кабина" },
     ],
   },
   {
@@ -160,16 +160,16 @@ const cottages: Cottage[] = [
       "Комфортный двухкомнатный домик для семейного отдыха с доступом к общей кухне.",
     details:
       "Второй двухкомнатный домик без собственной кухонной зоны. Подходит для семьи с детьми и рассчитан до 4 гостей. В доме есть двуспальная и двухъярусная кровати, холодильник, микроволновая печь, чайник, кондиционер, телевизор, Wi‑Fi и собственный санузел с душем. Готовить можно на общей летней кухне, расположенной на территории Парма Хутор.",
-    cover: { url: c5Exterior.url, alt: "Домик 3 снаружи" },
+    cover: { url: c5Exterior, alt: "Домик 3 снаружи" },
     photos: [
-      { url: c5Exterior.url, alt: "Домик 3 снаружи" },
-      { url: c5Porch.url, alt: "Веранда домика" },
-      { url: c5BunkRoom.url, alt: "Комната с двухъярусной кроватью" },
-      { url: c5BunkCorner.url, alt: "Обеденный уголок у окна" },
-      { url: c5Dining.url, alt: "Обеденная зона" },
-      { url: c5Bedroom.url, alt: "Спальня" },
-      { url: c5BedroomTv.url, alt: "Спальня с телевизором" },
-      { url: c5Bathroom.url, alt: "Санузел с душевой" },
+      { url: c5Exterior, alt: "Домик 3 снаружи" },
+      { url: c5Porch, alt: "Веранда домика" },
+      { url: c5BunkRoom, alt: "Комната с двухъярусной кроватью" },
+      { url: c5BunkCorner, alt: "Обеденный уголок у окна" },
+      { url: c5Dining, alt: "Обеденная зона" },
+      { url: c5Bedroom, alt: "Спальня" },
+      { url: c5BedroomTv, alt: "Спальня с телевизором" },
+      { url: c5Bathroom, alt: "Санузел с душевой" },
     ],
   },
 ];

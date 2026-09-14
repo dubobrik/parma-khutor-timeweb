@@ -2,16 +2,16 @@ import { ArrowUpRight, Home } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-import beachAsset from "../assets/places-beach-olenevka.jpeg.asset.json";
-import windsurfAsset from "../assets/places-liman-windsurf.jpeg.asset.json";
-import kiteAsset from "../assets/places-kitesurf.jpeg.asset.json";
-import divingAsset from "../assets/places-diving.jpeg.asset.json";
-import atleshAsset from "../assets/places-atlesh.jpeg.asset.json";
-import chashaAsset from "../assets/places-chasha-lyubvi.jpeg.asset.json";
-import dzhangulAsset from "../assets/places-dzhangul.jpeg.asset.json";
-import lavenderAsset from "../assets/lavender-bright.jpeg.asset.json";
-import solnechnayaAsset from "../assets/places-solnechnaya-dolina.jpeg.asset.json";
-import sunsetAsset from "../assets/places-sunset-cape.jpeg.asset.json";
+const beachAsset = "/assets/places-beach-olenevka.jpeg";
+const windsurfAsset = "/assets/places-liman-windsurf.jpeg";
+const kiteAsset = "/assets/places-kitesurf.jpeg";
+const divingAsset = "/assets/places-diving.jpeg";
+const atleshAsset = "/assets/places-atlesh.jpeg";
+const chashaAsset = "/assets/places-chasha-lyubvi.jpeg";
+const dzhangulAsset = "/assets/places-dzhangul.jpeg";
+const lavenderAsset = "/assets/lavender-bright.jpeg";
+const solnechnayaAsset = "/assets/places-solnechnaya-dolina.jpeg";
+const sunsetAsset = "/assets/places-sunset-cape.jpeg";
 
 type Place = {
   name: string;
@@ -27,61 +27,61 @@ const places: Place[] = [
     name: "Пляж Оленевки",
     description:
       "Белый песок, прозрачная вода и просторный берег. Место для неспешного дня у моря, купания и тех самых долгих летних вечеров.",
-    image: { url: beachAsset.url, alt: "Белый песчаный пляж Оленевки и прозрачное море" },
+    image: { url: beachAsset, alt: "Белый песчаный пляж Оленевки и прозрачное море" },
   },
   {
     name: "Лиман и виндсерфинг",
     description:
       "Лиман рядом с Оленевкой — одно из популярных мест для виндсерфинга. Можно попробовать выйти на воду с парусом или просто наблюдать за теми, кто ловит ветер.",
-    image: { url: windsurfAsset.url, alt: "Виндсерфинг на лимане рядом с Оленевкой" },
+    image: { url: windsurfAsset, alt: "Виндсерфинг на лимане рядом с Оленевкой" },
   },
   {
     name: "Кайтсерфинг, вингфойл и SUP",
     description:
       "Для тех, кому хочется движения: кайт, вингфойл или спокойная прогулка на SUP. Можно выбрать свой темп — от первых попыток до настоящего драйва на воде.",
-    image: { url: kiteAsset.url, alt: "Кайтсерфинг у побережья Тарханкута" },
+    image: { url: kiteAsset, alt: "Кайтсерфинг у побережья Тарханкута" },
   },
   {
     name: "Дайвинг и подводный мир",
     description:
       "Тарханкут интересен не только с берега. Прозрачная вода, скалы и подводный рельеф делают морские прогулки и погружения отдельным приключением.",
-    image: { url: divingAsset.url, alt: "Прозрачная вода и подводный мир Тарханкута" },
+    image: { url: divingAsset, alt: "Прозрачная вода и подводный мир Тарханкута" },
   },
   {
     name: "Большой и Малый Атлеш",
     description:
       "Скалы, природные арки, бухты и открытое море. Одно из тех мест, ради которых хочется останавливаться на каждом повороте и фотографировать.",
-    image: { url: atleshAsset.url, alt: "Скалы и открытое море у Малого Атлеша" },
+    image: { url: atleshAsset, alt: "Скалы и открытое море у Малого Атлеша" },
   },
   {
     name: "Чаша Любви",
     description:
       "Одна из самых известных природных локаций Тарханкута — небольшая каменная чаша с морской водой среди скал.",
-    image: { url: chashaAsset.url, alt: "Чаша Любви среди скал Тарханкута" },
+    image: { url: chashaAsset, alt: "Чаша Любви среди скал Тарханкута" },
   },
   {
     name: "Джангуль",
     description:
       "Совсем другой Тарханкут: высокие берега, степь, море и необычный рельеф побережья. Отличное направление для поездки и красивого маршрута.",
-    image: { url: dzhangulAsset.url, alt: "Высокие берега и рельеф побережья Джангуль" },
+    image: { url: dzhangulAsset, alt: "Высокие берега и рельеф побережья Джангуль" },
   },
   {
     name: "Лавандовые поля",
     description:
       "Летом степной пейзаж дополняют сиреневые оттенки лаванды. Красивое место для прогулки, фотографий и ещё одного совсем другого впечатления от Крыма.",
-    image: { url: lavenderAsset.url, alt: "Лавандовое поле в окрестностях Оленевки" },
+    image: { url: lavenderAsset, alt: "Лавандовое поле в окрестностях Оленевки" },
   },
   {
     name: "«Солнечная Долина»",
     description:
       "Ещё одно атмосферное место в Оленевке, которое можно добавить в прогулку или небольшой маршрут во время отдыха.",
-    image: { url: solnechnayaAsset.url, alt: "Белое здание «Солнечной Долины» в Оленевке" },
+    image: { url: solnechnayaAsset, alt: "Белое здание «Солнечной Долины» в Оленевке" },
   },
   {
     name: "Закаты Тарханкута",
     description:
       "А вечером необязательно куда-то ехать. Здесь можно просто остановиться, посмотреть на море и встретить закат без спешки.",
-    image: { url: sunsetAsset.url, alt: "Закат над морем на Тарханкуте" },
+    image: { url: sunsetAsset, alt: "Закат над морем на Тарханкуте" },
   },
 ];
 

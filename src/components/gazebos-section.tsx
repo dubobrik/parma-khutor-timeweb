@@ -3,14 +3,14 @@ import { ChevronLeft, ChevronRight, Images } from "lucide-react";
 
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
-import g1ExteriorCloseup from "../assets/gazebo-1-exterior-closeup.png.asset.json";
-import g1Interior from "../assets/gazebo-1-interior.png.asset.json";
-import g1Path from "../assets/gazebo-1-path.png.asset.json";
-import g1Wide from "../assets/gazebo-1-wide.png.asset.json";
+const g1ExteriorCloseup = "/assets/gazebo-1-exterior-closeup.png";
+const g1Interior = "/assets/gazebo-1-interior.png";
+const g1Path = "/assets/gazebo-1-path.png";
+const g1Wide = "/assets/gazebo-1-wide.png";
 
-import g2ExteriorCloseup from "../assets/gazebo-2-exterior-closeup.png.asset.json";
-import g2ExteriorWide from "../assets/gazebo-2-exterior-wide.png.asset.json";
-import g2Interior from "../assets/gazebo-2-interior.png.asset.json";
+const g2ExteriorCloseup = "/assets/gazebo-2-exterior-closeup.png";
+const g2ExteriorWide = "/assets/gazebo-2-exterior-wide.png";
+const g2Interior = "/assets/gazebo-2-interior.png";
 
 type Photo = { url: string; alt: string; objectPosition?: string };
 type Gazebo = {
@@ -32,12 +32,12 @@ const gazebos: Gazebo[] = [
       "Уютная беседка под виноградом рядом с двухуровневым домиком — для утреннего кофе, отдыха в тени и спокойных вечеров.",
     details:
       "Тихая беседка, укрытая виноградом, расположена рядом с двухуровневым домиком. Здесь приятно провести утро с чашкой кофе, отдохнуть в тени в жаркий день или собраться вечером в спокойной обстановке. Это более камерная зона отдыха для тех, кому хочется тишины и своего уголка на территории Парма Хутор.",
-    cover: { url: g1ExteriorCloseup.url, alt: "Беседка под виноградом снаружи", objectPosition: "object-[50%_45%]" },
+    cover: { url: g1ExteriorCloseup, alt: "Беседка под виноградом снаружи", objectPosition: "object-[50%_45%]" },
     photos: [
-      { url: g1ExteriorCloseup.url, alt: "Беседка под виноградом снаружи" },
-      { url: g1Interior.url, alt: "Интерьер беседки под виноградом" },
-      { url: g1Path.url, alt: "Дорожка к беседке" },
-      { url: g1Wide.url, alt: "Беседка на зелёной территории" },
+      { url: g1ExteriorCloseup, alt: "Беседка под виноградом снаружи" },
+      { url: g1Interior, alt: "Интерьер беседки под виноградом" },
+      { url: g1Path, alt: "Дорожка к беседке" },
+      { url: g1Wide, alt: "Беседка на зелёной территории" },
     ],
   },
   {
@@ -48,11 +48,11 @@ const gazebos: Gazebo[] = [
       "Просторная беседка с мангальной зоной — для семейных ужинов и вечерних посиделок на свежем воздухе.",
     details:
       "Отдельная беседка с мангальной зоной подходит для семейных ужинов, дружеских встреч и спокойных вечеров на свежем воздухе. Здесь можно приготовить ужин на мангале, собраться всей семьёй за столом и провести вечер после моря или поездки по Тарханкуту.",
-    cover: { url: g2ExteriorCloseup.url, alt: "Беседка с мангальной зоной снаружи", objectPosition: "object-[50%_45%]" },
+    cover: { url: g2ExteriorCloseup, alt: "Беседка с мангальной зоной снаружи", objectPosition: "object-[50%_45%]" },
     photos: [
-      { url: g2ExteriorCloseup.url, alt: "Беседка с мангальной зоной снаружи" },
-      { url: g2ExteriorWide.url, alt: "Общий вид беседки с мангалом" },
-      { url: g2Interior.url, alt: "Интерьер беседки с мангальной зоной" },
+      { url: g2ExteriorCloseup, alt: "Беседка с мангальной зоной снаружи" },
+      { url: g2ExteriorWide, alt: "Общий вид беседки с мангалом" },
+      { url: g2Interior, alt: "Интерьер беседки с мангальной зоной" },
     ],
   },
 ];

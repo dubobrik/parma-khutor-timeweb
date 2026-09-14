@@ -8,15 +8,15 @@ import { GroundsKitchenSection } from "@/components/grounds-kitchen-section";
 import { PlacesSection } from "@/components/places-section";
 import { ContactsSection } from "@/components/contacts-section";
 
-import heroAsset from "../assets/parma-hutor-hero-new.png.asset.json";
-import hammockAsset from "../assets/parma-hutor-hammock.png.asset.json";
-import swingAsset from "../assets/parma-hutor-about-replacement.png.asset.json";
-import supAsset from "../assets/parma-hutor-sup.png.asset.json";
-import beachAsset from "../assets/parma-hutor-beach.png.asset.json";
-import windsurfAsset from "../assets/parma-hutor-windsurf.png.asset.json";
-import kiteAsset from "../assets/parma-hutor-kite.png.asset.json";
-import atleshAsset from "../assets/parma-hutor-atlesh.jpg.asset.json";
-import lavenderFieldAsset from "../assets/lavender-bright.jpeg.asset.json";
+const heroAsset = "/assets/parma-hutor-hero-new.png";
+const hammockAsset = "/assets/parma-hutor-hammock.png";
+const swingAsset = "/assets/parma-hutor-about-replacement.png";
+const supAsset = "/assets/parma-hutor-sup.png";
+const beachAsset = "/assets/parma-hutor-beach.png";
+const windsurfAsset = "/assets/parma-hutor-windsurf.png";
+const kiteAsset = "/assets/parma-hutor-kite.png";
+const atleshAsset = "/assets/parma-hutor-atlesh.jpg";
+const lavenderFieldAsset = "/assets/lavender-bright.jpeg";
 
 
 export const Route = createFileRoute("/")({
@@ -53,7 +53,7 @@ function Index() {
     <main className="min-h-screen overflow-x-hidden bg-background text-foreground">
       <section className="relative min-h-[92svh] overflow-hidden" aria-labelledby="hero-title">
         <img
-          src={heroAsset.url}
+          src={heroAsset}
           alt="Два деревянных домика и цветущий сад в Парма Хутор"
           className="absolute inset-0 h-full w-full object-cover object-[50%_60%] sm:object-[50%_55%]"
         />
@@ -135,7 +135,7 @@ function Index() {
 
       <section id="about" className="relative overflow-hidden py-20 sm:py-28 lg:py-36" aria-labelledby="about-title">
         <img
-          src={beachAsset.url}
+          src={beachAsset}
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full scale-110 object-cover opacity-45 blur-3xl"
@@ -161,10 +161,10 @@ function Index() {
 
             <div className="grid gap-5 sm:grid-cols-2">
               <figure className="overflow-hidden rounded-3xl bg-card shadow-[0_24px_60px_-32px_oklch(0.4_0.06_220/45%)]">
-                <img src={hammockAsset.url} alt="Гамак и шезлонги у деревянного домика" className="aspect-[4/5] w-full object-cover" loading="lazy" />
+                <img src={hammockAsset} alt="Гамак и шезлонги у деревянного домика" className="aspect-[4/5] w-full object-cover" loading="lazy" />
               </figure>
               <figure className="overflow-hidden rounded-3xl bg-card shadow-[0_24px_60px_-32px_oklch(0.4_0.06_220/45%)] sm:mt-10">
-                <img src={swingAsset.url} alt="Качели, шезлонги и домик в розах на территории" className="aspect-[4/5] w-full object-cover" loading="lazy" />
+                <img src={swingAsset} alt="Качели, шезлонги и домик в розах на территории" className="aspect-[4/5] w-full object-cover" loading="lazy" />
               </figure>
             </div>
 
@@ -186,16 +186,16 @@ function Index() {
 
             <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
               <figure className="overflow-hidden rounded-2xl bg-card shadow-[0_16px_40px_-24px_oklch(0.4_0.06_220/40%)]">
-                <img src={supAsset.url} alt="Пара на SUP-досках" className="aspect-square w-full object-cover" loading="lazy" />
+                <img src={supAsset} alt="Пара на SUP-досках" className="aspect-square w-full object-cover" loading="lazy" />
               </figure>
               <figure className="overflow-hidden rounded-2xl bg-card shadow-[0_16px_40px_-24px_oklch(0.4_0.06_220/40%)]">
-                <img src={windsurfAsset.url} alt="Виндсерфинг на лимане" className="aspect-square w-full object-cover" loading="lazy" />
+                <img src={windsurfAsset} alt="Виндсерфинг на лимане" className="aspect-square w-full object-cover" loading="lazy" />
               </figure>
               <figure className="overflow-hidden rounded-2xl bg-card shadow-[0_16px_40px_-24px_oklch(0.4_0.06_220/40%)]">
-                <img src={kiteAsset.url} alt="Кайтсерфинг" className="aspect-square w-full object-cover" loading="lazy" />
+                <img src={kiteAsset} alt="Кайтсерфинг" className="aspect-square w-full object-cover" loading="lazy" />
               </figure>
               <figure className="overflow-hidden rounded-2xl bg-card shadow-[0_16px_40px_-24px_oklch(0.4_0.06_220/40%)]">
-                <img src={atleshAsset.url} alt="Малый Атлеш" className="aspect-square w-full object-cover" loading="lazy" />
+                <img src={atleshAsset} alt="Малый Атлеш" className="aspect-square w-full object-cover" loading="lazy" />
               </figure>
             </div>
 
@@ -220,7 +220,7 @@ function Index() {
 
           <div className="mt-20 grid gap-12 sm:mt-24 lg:grid-cols-2 lg:items-center lg:gap-16">
             <figure className="overflow-hidden rounded-3xl bg-card shadow-[0_30px_70px_-36px_oklch(0.4_0.06_220/50%)]">
-              <img src={lavenderFieldAsset.url} alt="Лавандовое поле в окрестностях Оленевки" className="aspect-[4/3] w-full object-cover" loading="lazy" />
+              <img src={lavenderFieldAsset} alt="Лавандовое поле в окрестностях Оленевки" className="aspect-[4/3] w-full object-cover" loading="lazy" />
             </figure>
             <div className="about-copy space-y-6 text-[1.02rem] leading-[1.85] text-muted-foreground sm:text-lg">
               <p>Можно съездить к лавандовым полям, заглянуть в «Солнечную Долину», провести день в дороге, а вечером вернуться в Парма Хутор и встречать закат уже без спешки.</p>

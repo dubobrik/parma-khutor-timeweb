@@ -3,32 +3,32 @@ import { ChevronLeft, ChevronRight, Images } from "lucide-react";
 
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
-import kitchenExterior from "../assets/summer-kitchen-exterior.webp.asset.json";
-import kitchenLantern from "../assets/summer-kitchen-lantern.webp.asset.json";
-import kitchenTableDetail from "../assets/summer-kitchen-table-detail.webp.asset.json";
-import kitchenWallArtCrabs from "../assets/summer-kitchen-wall-art-crabs.webp.asset.json";
-import kitchenCabinetsStove from "../assets/summer-kitchen-cabinets-stove.webp.asset.json";
-import kitchenSinkCorner from "../assets/summer-kitchen-sink-corner.webp.asset.json";
-import kitchenSinkWide from "../assets/summer-kitchen-sink-wide.webp.asset.json";
-import kitchenWallArtFish from "../assets/summer-kitchen-wall-art-fish.webp.asset.json";
-import kitchenInteriorSeating from "../assets/summer-kitchen-interior-seating.webp.asset.json";
+const kitchenExterior = "/assets/summer-kitchen-exterior.webp";
+const kitchenLantern = "/assets/summer-kitchen-lantern.webp";
+const kitchenTableDetail = "/assets/summer-kitchen-table-detail.webp";
+const kitchenWallArtCrabs = "/assets/summer-kitchen-wall-art-crabs.webp";
+const kitchenCabinetsStove = "/assets/summer-kitchen-cabinets-stove.webp";
+const kitchenSinkCorner = "/assets/summer-kitchen-sink-corner.webp";
+const kitchenSinkWide = "/assets/summer-kitchen-sink-wide.webp";
+const kitchenWallArtFish = "/assets/summer-kitchen-wall-art-fish.webp";
+const kitchenInteriorSeating = "/assets/summer-kitchen-interior-seating.webp";
 
-import groundsWelcomeCat from "../assets/grounds-welcome-cat.webp.asset.json";
-import groundsCypressStones from "../assets/grounds-cypress-stones.webp.asset.json";
-import groundsCypressRoses from "../assets/grounds-cypress-roses.webp.asset.json";
-import groundsPathCottage from "../assets/grounds-path-cottage.webp.asset.json";
-import groundsRoseArch from "../assets/grounds-rose-arch.webp.asset.json";
-import groundsGardenPath from "../assets/grounds-garden-path.webp.asset.json";
-import groundsPeachTree from "../assets/grounds-peach-tree.webp.asset.json";
-import groundsGrillPath from "../assets/grounds-grill-path.webp.asset.json";
-import groundsSwingBench from "../assets/grounds-swing-bench.webp.asset.json";
-import groundsBarrelGrill from "../assets/grounds-barrel-grill.webp.asset.json";
-import groundsGrapes from "../assets/grounds-grapes.webp.asset.json";
-import groundsThuja from "../assets/grounds-thuja.webp.asset.json";
-import groundsHammock from "../assets/grounds-hammock.webp.asset.json";
-import groundsEggChair from "../assets/grounds-egg-chair.webp.asset.json";
-import groundsKidsSwings from "../assets/grounds-kids-swings.webp.asset.json";
-import groundsTrampoline from "../assets/grounds-trampoline.png.asset.json";
+const groundsWelcomeCat = "/assets/grounds-welcome-cat.webp";
+const groundsCypressStones = "/assets/grounds-cypress-stones.webp";
+const groundsCypressRoses = "/assets/grounds-cypress-roses.webp";
+const groundsPathCottage = "/assets/grounds-path-cottage.webp";
+const groundsRoseArch = "/assets/grounds-rose-arch.webp";
+const groundsGardenPath = "/assets/grounds-garden-path.webp";
+const groundsPeachTree = "/assets/grounds-peach-tree.webp";
+const groundsGrillPath = "/assets/grounds-grill-path.webp";
+const groundsSwingBench = "/assets/grounds-swing-bench.webp";
+const groundsBarrelGrill = "/assets/grounds-barrel-grill.webp";
+const groundsGrapes = "/assets/grounds-grapes.webp";
+const groundsThuja = "/assets/grounds-thuja.webp";
+const groundsHammock = "/assets/grounds-hammock.webp";
+const groundsEggChair = "/assets/grounds-egg-chair.webp";
+const groundsKidsSwings = "/assets/grounds-kids-swings.webp";
+const groundsTrampoline = "/assets/grounds-trampoline.png";
 
 type Photo = { url: string; alt: string; objectPosition?: string };
 type Zone = {
@@ -50,17 +50,17 @@ const zones: Zone[] = [
       "На территории Парма Хутор есть отдельная общая летняя кухня для гостей. Здесь можно спокойно приготовить еду и не зависеть от кафе или поездок в посёлок.",
       "В кухне есть газовая плита, микроволновая печь, мойка с горячей водой, необходимая посуда и стиральная машина.",
     ],
-    cover: { url: kitchenExterior.url, alt: "Общая летняя кухня Парма Хутор снаружи", objectPosition: "object-[50%_60%]" },
+    cover: { url: kitchenExterior, alt: "Общая летняя кухня Парма Хутор снаружи", objectPosition: "object-[50%_60%]" },
     photos: [
-      { url: kitchenExterior.url, alt: "Общая летняя кухня снаружи" },
-      { url: kitchenInteriorSeating.url, alt: "Крытая обеденная зона летней кухни" },
-      { url: kitchenCabinetsStove.url, alt: "Кухонные шкафы и газовая плита" },
-      { url: kitchenSinkCorner.url, alt: "Мойка и рабочая зона кухни" },
-      { url: kitchenSinkWide.url, alt: "Общий вид рабочей зоны кухни" },
-      { url: kitchenTableDetail.url, alt: "Детали оформления летней кухни" },
-      { url: kitchenLantern.url, alt: "Фонарь под виноградом у летней кухни" },
-      { url: kitchenWallArtCrabs.url, alt: "Роспись на стене летней кухни" },
-      { url: kitchenWallArtFish.url, alt: "Декоративная роспись с рыбами" },
+      { url: kitchenExterior, alt: "Общая летняя кухня снаружи" },
+      { url: kitchenInteriorSeating, alt: "Крытая обеденная зона летней кухни" },
+      { url: kitchenCabinetsStove, alt: "Кухонные шкафы и газовая плита" },
+      { url: kitchenSinkCorner, alt: "Мойка и рабочая зона кухни" },
+      { url: kitchenSinkWide, alt: "Общий вид рабочей зоны кухни" },
+      { url: kitchenTableDetail, alt: "Детали оформления летней кухни" },
+      { url: kitchenLantern, alt: "Фонарь под виноградом у летней кухни" },
+      { url: kitchenWallArtCrabs, alt: "Роспись на стене летней кухни" },
+      { url: kitchenWallArtFish, alt: "Декоративная роспись с рыбами" },
     ],
   },
   {
@@ -72,24 +72,24 @@ const zones: Zone[] = [
       "Парма Хутор — это не только домики, но и пространство вокруг них. На территории много зелени и цветов, есть качели, гамак и места, где можно просто посидеть в тени, выпить кофе или отдохнуть после моря.",
       "Здесь легко провести время без спешки: утром выйти на свежий воздух, днём отдохнуть в тени, а вечером вернуться после прогулки или поездки по Тарханкуту и провести время на территории.",
     ],
-    cover: { url: groundsWelcomeCat.url, alt: "Железный кот с надписью Welcome на территории Парма Хутор", objectPosition: "object-[50%_55%]" },
+    cover: { url: groundsWelcomeCat, alt: "Железный кот с надписью Welcome на территории Парма Хутор", objectPosition: "object-[50%_55%]" },
     photos: [
-      { url: groundsWelcomeCat.url, alt: "Железный кот с надписью Welcome" },
-      { url: groundsGardenPath.url, alt: "Садовые дорожки и зелень территории" },
-      { url: groundsPathCottage.url, alt: "Дорожка к домику среди деревьев" },
-      { url: groundsRoseArch.url, alt: "Арка с розами у входа в домик" },
-      { url: groundsCypressStones.url, alt: "Кипарис и каменная клумба на лужайке" },
-      { url: groundsCypressRoses.url, alt: "Кипарисы и розы вдоль дорожки" },
-      { url: groundsPeachTree.url, alt: "Персиковое дерево с плодами" },
-      { url: groundsGrapes.url, alt: "Гроздь винограда на территории" },
-      { url: groundsThuja.url, alt: "Декоративные хвойные у домика" },
-      { url: groundsHammock.url, alt: "Гамак и шезлонги у домика" },
-      { url: groundsSwingBench.url, alt: "Качели и зона отдыха у домика" },
-      { url: groundsEggChair.url, alt: "Подвесное кресло в саду" },
-      { url: groundsKidsSwings.url, alt: "Детские качели на лужайке" },
-      { url: groundsTrampoline.url, alt: "Батут на зелёной территории" },
-      { url: groundsGrillPath.url, alt: "Мангальная зона и дорожки в саду" },
-      { url: groundsBarrelGrill.url, alt: "Мангал у кирпичной стены" },
+      { url: groundsWelcomeCat, alt: "Железный кот с надписью Welcome" },
+      { url: groundsGardenPath, alt: "Садовые дорожки и зелень территории" },
+      { url: groundsPathCottage, alt: "Дорожка к домику среди деревьев" },
+      { url: groundsRoseArch, alt: "Арка с розами у входа в домик" },
+      { url: groundsCypressStones, alt: "Кипарис и каменная клумба на лужайке" },
+      { url: groundsCypressRoses, alt: "Кипарисы и розы вдоль дорожки" },
+      { url: groundsPeachTree, alt: "Персиковое дерево с плодами" },
+      { url: groundsGrapes, alt: "Гроздь винограда на территории" },
+      { url: groundsThuja, alt: "Декоративные хвойные у домика" },
+      { url: groundsHammock, alt: "Гамак и шезлонги у домика" },
+      { url: groundsSwingBench, alt: "Качели и зона отдыха у домика" },
+      { url: groundsEggChair, alt: "Подвесное кресло в саду" },
+      { url: groundsKidsSwings, alt: "Детские качели на лужайке" },
+      { url: groundsTrampoline, alt: "Батут на зелёной территории" },
+      { url: groundsGrillPath, alt: "Мангальная зона и дорожки в саду" },
+      { url: groundsBarrelGrill, alt: "Мангал у кирпичной стены" },
     ],
   },
 ];
